@@ -5,9 +5,7 @@
   font-weight: 100;
   font-style: normal;
 }
-*{
-    overflow-x: hidden;
-}
+
 
 /* shared styles */
 .btn-primary{
@@ -23,7 +21,7 @@
     color: black;
 }
 /* nav styles */
-nav h4{
+.navbar h4{
     font-size: 1.5rem;
 }
 .navbar{
@@ -93,30 +91,41 @@ nav a{
     .navbar{
         flex-direction: column;
     }
+    
+    
     .navbar ul{
       flex-direction: column;  
         
     }
     .banner{
+        
         flex-direction: column-reverse;
-        text-align: center;
-        margin: 50px ;
+        justify-content: center;
+        align-items: center;
+        
     }
-    .banner-title{
+    .banner-content{
+        width: 230px; 
+        justify-self: center;
+        text-align: center;
        
-       justify-content: center ;
-       align-items: center;
+    }
+    .banner-title{  
        font-size: 1.5rem; 
-       width: 280px;
+       width: 230px;
     }  
     .banner-description{
         font-weight: 500px;
+
+        
+        
     }
     .logo{
-       width: 100%;
+       width: 90%;
     } 
     .logo ul{
-        flex-wrap: wrap;  
-        gap: 25px;  
+        flex-wrap: wrap;
+        gap: 20px; 
+        
     }  
 }
