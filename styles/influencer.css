@@ -63,21 +63,29 @@ nav a{
   max-width: 100%;  
  
 }
+/* logo */
+.logo li{
+    list-style: none;
+}
+.logo ul{
+    display: flex;
+    gap:50px ;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 165px;
+}
 
 /* media query */
 @media screen and (max-width: 576px) {
     .banner, .navbar{
         flex-direction: column;
     }
-    .navbar ul{
+    .navbar ul, .logo ul{
       flex-direction: column;  
         
     }
     .banner-title{
        justify-content: center ;
        align-items: center; 
-    }
-        
-    
-    
+    }     
 }
