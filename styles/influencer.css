@@ -5,6 +5,10 @@
   font-weight: 100;
   font-style: normal;
 }
+*{
+    overflow-x: hidden;
+}
+
 /* shared styles */
 .btn-primary{
     background-color:#E02C6D ;
@@ -42,31 +46,36 @@ nav a{
 }
 /* banner */
 .banner{
-    margin: 0 120px;
+    margin: 80px 120px;
     display: flex;
     gap: 120px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
+    
+}
+.banner-content{
+     width: 100%;
 }
 .camera-img{
     background-image: url('../images/Circle\ design.svg');
     background-position: center;
+    background-size: cover;
+    
 }
 .banner-title{
     font-size: 3rem;
 }
 .banner-description{
     font-size: 1rem;
+    font-weight: 600px;
 }
 .banner-img{
-  max-width: 100%;  
- 
+  max-width: 100%;
+  height: auto; 
 }
 /* logo */
 .logo{
-    width: 1000px;
-    
+    width: 1000px;   
     justify-content: center;
     align-items: center;
     margin: 100px auto;
@@ -90,13 +99,19 @@ nav a{
     }
     .banner{
         flex-direction: column-reverse;
+        text-align: center;
+        margin: 50px ;
     }
     .banner-title{
+       
        justify-content: center ;
        align-items: center;
        font-size: 1.5rem; 
        width: 280px;
     }  
+    .banner-description{
+        font-weight: 500px;
+    }
     .logo{
        width: 100%;
     } 
