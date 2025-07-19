@@ -64,28 +64,44 @@ nav a{
  
 }
 /* logo */
+.logo{
+    width: 1000px;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
 .logo li{
     list-style: none;
 }
 .logo ul{
     display: flex;
-    gap:50px ;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 165px;
+    gap:60px ;  
 }
 
 /* media query */
 @media screen and (max-width: 576px) {
-    .banner, .navbar{
+    .navbar{
         flex-direction: column;
     }
-    .navbar ul, .logo ul{
+    .navbar ul{
       flex-direction: column;  
         
     }
+    .banner{
+        flex-direction: column-reverse;
+    }
     .banner-title{
        justify-content: center ;
-       align-items: center; 
-    }     
+       align-items: center;
+       font-size: 1.5rem; 
+       width: 280px;
+    }  
+    .logo{
+       width: 100%;
+    } 
+    .logo ul{
+        flex-wrap: wrap;  
+        gap: 25px;  
+    }  
 }
